@@ -1,4 +1,4 @@
-﻿using Aula___Projeto_Sistema_Web.Models;
+﻿using Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
