@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aula - Projeto Sistema Web", "Aula - Projeto Sistema Web\Aula - Projeto Sistema Web.csproj", "{54FC7260-3F8C-4470-970D-36AB7B119CDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesWeb", "Aula - Projeto Sistema Web\SalesWeb.csproj", "{54FC7260-3F8C-4470-970D-36AB7B119CDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
