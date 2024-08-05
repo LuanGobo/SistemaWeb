@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SalesWeb.Models;
+using SalesWeb.Data;
 
 namespace Aula___Projeto_Sistema_Web
 {
@@ -37,16 +38,19 @@ namespace Aula___Projeto_Sistema_Web
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<SalesWebContext>(options =>
-             options.UseMySql(Configuration.GetConnectionString("SalesWebContext"), builder =>
-            builder.MigrationsAssembly("SalesWeb")));
+                options.UseMySql(Configuration.GetConnectionString("SalesWebContext"), builder =>
+                builder.MigrationsAssembly("SalesWeb")));
+
+            services.AddScoped<SeedingServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedingServices seedingServices)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                seedingServices.Seed();
             }
             else
             {
