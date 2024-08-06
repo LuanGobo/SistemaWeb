@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore;
+﻿using Aula___Projeto_Sistema_Web;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -8,7 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Aula___Projeto_Sistema_Web
+namespace SalesWeb
 {
     public class Program
     {

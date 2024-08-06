@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SalesWeb.Models;
 using SalesWeb.Data;
+using SalesWeb.Services;
 
 namespace Aula___Projeto_Sistema_Web
 {
@@ -42,6 +43,7 @@ namespace Aula___Projeto_Sistema_Web
                 builder.MigrationsAssembly("SalesWeb")));
 
             services.AddScoped<SeedingServices>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
